@@ -1,6 +1,5 @@
 
 
-import pygame, sys, numpy as np , random
 found = 0
 lan_vo = 0
 
@@ -235,3 +234,6 @@ def start_Beam_Search():
                 text_rect = text.get_rect(center=(400, 100))
                 man_hinh.blit(text, text_rect)
                 pygame.display.update()
+
+
+
