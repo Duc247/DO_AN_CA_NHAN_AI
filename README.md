@@ -25,6 +25,7 @@
 6.  **Hiển thị bằng Pygame:**
     * Vòng lặp hiển thị: vẽ nền, vẽ trạng thái đích (`__ve_8_con_xe__`) và tuần tự các cấu hình trung gian (`__ve_co_trong__`).
     * Phát âm thanh `tieng_co.mp3` mỗi bước, delay giữa các bước để quan sát tiến trình.
+    ![Demo gameplay](BFS.gif)
 
 ### 2. Thuật toán DFS (Depth-First Search)
 1.  **Khởi tạo chương trình:**
@@ -46,6 +47,7 @@
     * Vòng lặp Pygame hiển thị lần lượt các bước qua `__ve_co_trong__`, phát âm thanh và delay.
 6.  **Kết thúc:**
     * Nếu tìm được cấu hình hoàn chỉnh thì hiển thị kết quả cuối. Nếu stack rỗng mà chưa tìm được, trả về None.
+     ![Demo gameplay](DFS_CV.gif)
 
 ### 3. Thuật toán IDS (Iterative Deepening Search)
 1.  **Khởi tạo:**
@@ -63,6 +65,7 @@
 5.  **Hiển thị bằng Pygame:**
     * Lặp vẽ nền, vẽ trạng thái đích và tuần tự các cấu hình trung gian.
     * Phát âm thanh cho mỗi bước, delay để người xem theo dõi.
+     ![Demo gameplay](IDS.gif)
 
 ### 4. Thuật toán DLS (Depth-Limited Search)
 1.  **Khởi tạo chương trình:**
@@ -82,7 +85,7 @@
     * Nếu nhận `"cutoff"` hoặc `None`, tạo danh sách hiển thị mặc định.
 5.  **Hiển thị bằng Pygame:**
     * Duyệt danh sách cấu hình trung gian: gọi `__ve_co_trong__` cho từng bước, phát âm thanh và delay.
-
+    ![Demo gameplay](DLS.gif)
 ### 5. Thuật toán UCS (Uniform Cost Search)
 1.  **Khởi tạo chương trình:**
     * Gọi `__start_UCS__`: khởi tạo Pygame, cửa sổ, font và âm thanh.
@@ -98,10 +101,9 @@
 4.  **Truy vết & hiển thị kết quả:**
     * Khi tìm được đích, `__xu_ly_cau_hinh__` dùng `Cau_hinh` để duyệt ngược và tạo danh sách các cấu hình trung gian.
     * Vòng lặp Pygame hiển thị lần lượt các bước và chi phí trên màn hình.
-
+    ![Demo gameplay](UCS.gif)
 ---
 
-## II. Thuật toán Tìm kiếm có Thông tin (Informed Search)
 
 ### 6. Thuật toán Greedy (Best-first theo heuristic)
 1.  **Khởi tạo chương trình:**
@@ -120,7 +122,7 @@
     * Vòng lặp Pygame hiển thị tuần tự các cấu hình, phát âm thanh và in `chi_phi` mỗi bước.
 5.  **Kết thúc:**
     * Nếu tìm được, hiển thị cấu hình cuối. Nếu heap rỗng, trả về `None`.
-
+    ![Demo gameplay](Grreedy.gif)
 ### 7. Thuật toán A*
 1.  **Khởi tạo chương trình:**
     * Gọi `__start_A_sao__`. Khởi tạo Pygame, cửa sổ 800×600, surfaces (`panel`, `panel_1`), font và âm thanh (`tieng_co.mp3`).
@@ -141,7 +143,7 @@
 6.  **Hiển thị bằng Pygame:**
     * Vòng lặp chính Pygame: hiển thị nền, vẽ trạng thái đích (`__ve_8_con_xe__`) và lần lượt các cấu hình trung gian (`__ve_co_trong__`).
     * Ở mỗi bước phát âm thanh (`tieng_co.mp3`) và hiển thị chuỗi chi phí (`f g h`) lên màn hình, delay giữa các bước để quan sát.
-
+    ![Demo gameplay](A_SAO.gif)
 ### 8. Thuật toán AND–OR Graph Search
 1.  **Khởi tạo:**
     * Hàm `__AND_OR_Search__` chạy đầu tiên, khởi tạo Pygame, cửa sổ, bảng cờ 8×8.
@@ -162,10 +164,6 @@
     * Vòng lặp chính Pygame hiển thị từng cấu hình bằng `__ve_co_trong__`, kèm âm thanh `tieng_co.mp3`.
 6.  **Kết thúc:**
     * Khi đủ 8 quân xe hợp lệ, hiển thị cấu hình cuối cùng và dừng chương trình.
-
----
-
-## III. Thuật toán Tìm kiếm Cục bộ (Local Search)
 
 ### 9. Thuật toán Hill Climbing (Beam Search)
 1.  **Khởi tạo:**
@@ -254,9 +252,6 @@
     * Giao diện Pygame có thể dùng để hiển thị kết quả cuối.
 
 ---
-
-## IV. Thuật toán Thỏa mãn Ràng buộc (Constraint Satisfaction)
-
 ### 13. Thuật toán Backtracking
 1.  **Khởi tạo GUI & tham số:**
     * Gọi `__start_BK__`: khởi tạo Pygame, tạo cửa sổ 900×700, nạp âm thanh, ảnh.
@@ -273,7 +268,7 @@
         * Hoàn tác gán nếu thất bại.
 5.  **Hiển thị tiến trình:**
     * Sau khi `bk(0)` hoàn tất, lặp qua `duong_di` và gọi `ve_ban_co` để vẽ từng bước.
-
+    ![Demo gameplay](BK.gif)
 ### 14. Backtracking + Forward-Checking
 1.  **Khởi tạo giao diện:**
     * Gọi `__start_BFS_MU__`. Khởi tạo Pygame, cửa sổ 800×600, surfaces và âm thanh.
