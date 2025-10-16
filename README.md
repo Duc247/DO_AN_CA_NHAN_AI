@@ -2,8 +2,6 @@
 
 Đề tài thực hiện bài toán sắp xếp 8 quân xe trên bàn cờ sao cho không quân nào ăn nhau, kết hợp triển khai và so sánh các thuật toán tìm kiếm trong AI.
 
----
-
 ## I. Thuật toán Tìm kiếm Mù (Uninformed Search)
 
 ### 1. Thuật toán BFS
@@ -102,8 +100,6 @@
     * Khi tìm được đích, `__xu_ly_cau_hinh__` dùng `Cau_hinh` để duyệt ngược và tạo danh sách các cấu hình trung gian.
     * Vòng lặp Pygame hiển thị lần lượt các bước và chi phí trên màn hình.
     ![Demo gameplay](UCS.gif)
----
-
 
 ### 6. Thuật toán Greedy (Best-first theo heuristic)
 1.  **Khởi tạo chương trình:**
@@ -250,8 +246,6 @@
     * Nếu tìm thấy cá thể khớp mẫu, hàm trả về ma trận thành công.
     * Nếu hết số thế hệ, trả về `None` hoặc quần thể cuối.
     * Giao diện Pygame có thể dùng để hiển thị kết quả cuối.
-
----
 ### 13. Thuật toán Backtracking
 1.  **Khởi tạo GUI & tham số:**
     * Gọi `__start_BK__`: khởi tạo Pygame, tạo cửa sổ 900×700, nạp âm thanh, ảnh.
@@ -288,8 +282,6 @@
 5.  **Thu kết quả & hiển thị:**
     * Sau khi backtracking hoàn thành, `duong_di` chứa các ma trận trung gian.
     * Lặp qua `duong_di`: gọi `__ve_ban_co__` để vẽ từng bước, phát âm thanh và delay để quan sát.
-
----
 
 ### 15. TÌM KIẾM MÙ — Multi-Universe BFS
 1.  **Khởi tạo GUI & tham số:**
